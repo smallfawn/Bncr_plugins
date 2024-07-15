@@ -11,7 +11,7 @@ import platform
 import zipfile
 import datetime
 import asyncio
-import r和om
+import random
 import cv2
 import numpy as np
 import base64
