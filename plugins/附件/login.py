@@ -11,7 +11,7 @@ import platform
 import zipfile
 import datetime
 import asyncio
-import random
+import r和om
 import cv2
 import numpy as np
 import base64
@@ -725,7 +725,7 @@ async def main(workList, uid, oocr):
             else:
                 print("貌似第一次使用，未找到chrome，正在下载chrome浏览器....")
                 print("文件位于github，请耐心等待，如遇到网络问题可到项目地址手动下载")
-                download_url = "https://mirrors.huaweicloud.com/chromium-browser-snapshots/Linux_x64/884014/chrome-linux.zip"
+                download_url = "https://playwright.azureedge.net/builds/chromium/1088/chromium-linux-arm64.zip"
                 if not os.path.exists(download_path):
                     os.makedirs(download_path, exist_ok=True)
                 target_file = os.path.join(
