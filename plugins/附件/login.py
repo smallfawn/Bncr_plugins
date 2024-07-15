@@ -729,7 +729,7 @@ async def main(workList, uid, oocr):
                 if not os.path.exists(download_path):
                     os.makedirs(download_path, exist_ok=True)
                 target_file = os.path.join(
-                    download_path, "chrome-linux.zip"
+                    download_path, "chromium-linux-arm64.zip"
                 )
                 await download_file(download_url, target_file)
                 with zipfile.ZipFile(target_file, "r") as zip_ref:
