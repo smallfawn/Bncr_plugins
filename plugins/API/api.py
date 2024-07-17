@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # api.py
 run_host = "0.0.0.0"
-run_port = 12345
+run_port = 2345
 
 
 from quart import Quart, request, jsonify
