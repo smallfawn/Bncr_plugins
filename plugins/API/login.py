@@ -697,7 +697,7 @@ async def main(workList, uid, oocr):
             if os.path.exists(chrome_exe):
                 return chrome_exe
             else:
-                print("貌似第一次使用，未找到chrome，正在下载chrome浏览器....")
+                print("貌似第一次使用，未找到chrome，正在下载chrome-win32浏览器....")
 
                 chromeurl = "https://mirrors.huaweicloud.com/chromium-browser-snapshots/Win_x64/588429/chrome-win32.zip"
                 target_file = "chrome-win.zip"
@@ -723,8 +723,7 @@ async def main(workList, uid, oocr):
             if os.path.isfile(chrome_path):
                 return chrome_path
             else:
-                print("貌似第一次使用，未找到chrome，正在下载chrome浏览器....")
-                print("文件位于github，请耐心等待，如遇到网络问题可到项目地址手动下载")
+                print("貌似第一次使用，未找到chrome，正在下载chromium-linux-arm64浏览器....")
                 download_url = "https://playwright.azureedge.net/builds/chromium/1088/chromium-linux-arm64.zip"
                 if not os.path.exists(download_path):
                     os.makedirs(download_path, exist_ok=True)
